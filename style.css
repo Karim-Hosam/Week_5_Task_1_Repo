@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    width: 95vw;
+    margin: auto;
+}
+.spinner{
+
+    height: 80px;
+    width: 80px;
+    border: 10px solid rgb(223, 223, 223);
+    border-top-color: red;
+    border-radius: 50%;
+    animation: spinning 1s linear infinite;
+}
+
+@keyframes spinning {
+    to {
+        transform: rotate(360deg);
+    }
+}
